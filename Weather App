@@ -1,0 +1,24 @@
+import requests
+import json
+import win32com.client as wincom
+speak = wincom.Dispatch("SAPI.SpVoice")
+print("Welcome to the Weather App")
+print("Note : Press 'Q' to Exit")
+while True:
+    city = input("Enter Name of the City : ")
+    if city == "Q":
+        break
+    url = f"https://api.weatherapi.com/v1/current.json?key=b699372d104b427daa935949241102&q={city}"
+    r = requests.get(url)
+    wdic = json.loads(r.text)
+    print(f"{city} have a ", wdic["current"]["temp_c"], "°Celsius", "With a Humidity of ", wdic["current"]["humidity"])
+    c1 = f"{city} have a"
+    t1 = wdic["current"]["temp_c"]
+    c2 = "Degree Celsius"
+    speak.speak(c1)
+    speak.speak(t1)
+    speak.speak(c2)
+    h1 = "with a humidity of"
+    h2 = wdic["current"]["humidity"]
+    speak.speak(h1)
+    speak.speak(h2)
