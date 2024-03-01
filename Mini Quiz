@@ -1,0 +1,84 @@
+score = 0
+print("Welcome to my Quiz!")
+play = input("You want to Play?(yes/no)\n")
+if play != "yes":
+    exit()
+print("Let's Start the Quiz! ")
+print("QUIZ 1 : ")
+a1 = input("What is the Full Form of CPU?\n")
+if a1 != "central processing unit":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 2 : ")
+a2 = input("What is the Full Form of RAM?\n")
+if a2 != "random access memory":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 3 : ")
+a3 = input("What is the Full Form of ROM?\n")
+if a3 != "read only memory":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 4 : ")
+a4 = input("What is the Full Form of PC?\n")
+if a4 != "personal computer":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 5 : ")
+a5 = input("What is the Full Form of OS?\n")
+if a5 != "operating system":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 6 : ")
+a6 = input("What is the Full Form of DOC?\n")
+if a6 != "document":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 7 : ")
+a7 = input("What is the Full Form of TXT?\n")
+if a7 != "text":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 8 : ")
+a8 = input("What is the Full Form of E-Mail?\n")
+if a8 != "electronic mail":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 9 : ")
+a9 = input("What is the Full Form of G-Mail?\n")
+if a9 != "google mail":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("QUIZ 10 : ")
+a10 = input("What is the Full Form of UPS?\n")
+if a10 != "uninterruptible power supply":
+    print("INCORRECT !")
+else:
+    print("CORRECT !")
+    score += 1
+print("Quiz Completed")
+print(f"Your Score is {score}/10")
+if score < 4:
+    print("Study Hard")
+elif score > 8:
+    print("Well Done")
+else:
+    print("Keep it up")
