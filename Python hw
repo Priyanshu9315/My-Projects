@@ -1,0 +1,13 @@
+# Wap to find repeated character from user input
+
+name = input("Enter a String : ")
+final = name.replace(" ", "")
+temp = []
+count = 0
+for i in final:
+    temp.append(i)
+num = set(temp)
+num = list(num)
+for i in num:
+    temp.remove(i)
+print("repeated characters are : ", set(temp))
