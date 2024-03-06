@@ -1,0 +1,11 @@
+# Wap to find the count of repeated character from user input
+
+name = input("Enter a String : ")
+final = name.replace(" ", "")
+temp = []
+count = 0
+for i in final:
+    temp.append(i)
+num = set(temp)
+rep = len(temp) - len(num)
+print("Count of Repeated Characters are : ", rep)
